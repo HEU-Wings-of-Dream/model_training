@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dataset/
+runs/
+*.pt
+*.onnx
+*.mp4
+*.avi
+*.zip
+*.tar.gz

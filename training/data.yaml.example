@@ -1,0 +1,11 @@
+# Copy this file to data.yaml and replace the paths with your dataset paths.
+# Paths may be absolute or relative to this file.
+path: ./dataset
+train: images/train
+val: images/val
+
+nc: 3
+names: [Target, act, deact]
+
+# For pose training, keep this aligned with the labels in your dataset.
+kpt_shape: [6, 2]
