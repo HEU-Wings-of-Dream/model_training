@@ -1,0 +1,6 @@
+path: ./dataset
+train: images/train
+val: images/val
+nc: 1
+names: [armor]
+kpt_shape: [4, 3]

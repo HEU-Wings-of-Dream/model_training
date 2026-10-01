@@ -17,6 +17,26 @@ paths, and then run:
 python training/train_pose.py --data training/data.yaml --model yolo11n-pose.pt
 ```
 
+The latest specialized networks are organized separately:
+
+```text
+training/energy/   energy-mechanism network
+training/armor/    armor corner network
+```
+
+Each directory contains its training entry point, network YAML, and dataset
+configuration template. Both specialized YAML files use custom Ultralytics
+layers (`EnergyPoseDetect`, `ArmorPoseDetect`, and `MobileNetV3IR`) from the
+local training environment; the corresponding custom Ultralytics source or
+package must be installed before training.
+
+Examples:
+
+```bash
+python training/energy/train_energy.py --data training/energy/data.yaml
+python training/armor/train_armor_corners.py --data training/armor/data.yaml
+```
+
 Useful options include `--epochs`, `--batch`, `--device`, `--workers`, and
 `--name`. Training outputs are written under `runs/`.
 
