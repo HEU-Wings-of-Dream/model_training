@@ -5,6 +5,8 @@ venv/
 dataset/
 runs/
 *.pt
+!models/
+!models/*.pt
 *.onnx
 *.mp4
 *.avi

@@ -42,3 +42,11 @@ python training/armor/train_armor_precision.py --data training/armor/data.yaml
 
 The scripts accept options such as `--epochs`, `--batch`, `--device`,
 `--workers`, and `--name`; outputs are written under `runs/`.
+
+## Published weights
+
+- `models/energy_mechanism_best.pt`: energy-mechanism pose model.
+- `models/armor_precision_best.pt`: accuracy-first armor corner pose model.
+
+The weight files are stored with Git LFS; install Git LFS before cloning if
+you need the binary model files.
