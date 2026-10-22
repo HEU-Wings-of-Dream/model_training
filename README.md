@@ -45,8 +45,8 @@ The scripts accept options such as `--epochs`, `--batch`, `--device`,
 
 ## Published weights
 
-- `models/energy_mechanism_best.pt`: energy-mechanism pose model.
-- `models/armor_precision_best.pt`: accuracy-first armor corner pose model.
+- `models/rune.pt`: energy-mechanism pose model.
+- `models/autoaim.pt`: accuracy-first armor corner pose model.
 
 The weight files are stored with Git LFS; install Git LFS before cloning if
 you need the binary model files.
