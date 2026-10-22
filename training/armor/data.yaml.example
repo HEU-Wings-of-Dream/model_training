@@ -4,3 +4,4 @@ val: images/val
 nc: 1
 names: [armor]
 kpt_shape: [4, 3]
+flip_idx: [1, 0, 3, 2]

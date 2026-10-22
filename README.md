@@ -28,15 +28,16 @@ python training/energy/train_energy.py --data training/energy/data.yaml
 
 ## Armor auto-aim
 
-- Architecture: `training/armor/armor11_corners_lite_pose.yaml`
-- Training entry point: `training/armor/train_armor_corners.py`
+- Architecture: `training/armor/armor11_corners_precision_pose.yaml`
+- Training entry point: `training/armor/train_armor_precision.py`
 - Dataset template: `training/armor/data.yaml.example`
 
-The YOLO11-derived model uses an `ArmorPoseDetect` head and predicts one class
-with four corner keypoints (x, y, visibility).
+This is the accuracy-first YOLO11-L model, with P3/P4/P5 detection scales and
+an `ArmorPoseDetect` head. It predicts one class with four corner keypoints
+(x, y, visibility).
 
 ```bash
-python training/armor/train_armor_corners.py --data training/armor/data.yaml
+python training/armor/train_armor_precision.py --data training/armor/data.yaml
 ```
 
 The scripts accept options such as `--epochs`, `--batch`, `--device`,
